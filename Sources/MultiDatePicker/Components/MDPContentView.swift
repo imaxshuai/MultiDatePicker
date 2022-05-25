@@ -10,7 +10,7 @@ import SwiftUI
 /**
  * Displays the calendar of MDPDayOfMonth items using MDPDayView views.
  */
-*
+
 @available(iOS 14.0, *)
 struct MDPContentView: View {
     @EnvironmentObject var monthDataModel: MDPModel
