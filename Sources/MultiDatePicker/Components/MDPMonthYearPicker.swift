@@ -13,6 +13,7 @@ import SwiftUI
  *
  * When a month or year is selected, the action parameter is invoked with the new values.
  */
+@available(iOS 14.0, *)
 struct MDPMonthYearPicker: View {
     let months = (0...11).map {$0}
     let years = (1970...2099).map {$0}
@@ -62,6 +63,7 @@ struct MDPMonthYearPicker: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct MonthYearPicker_Previews: PreviewProvider {
     static var previews: some View {
         MDPMonthYearPicker(date: Date()) { (month, year) in

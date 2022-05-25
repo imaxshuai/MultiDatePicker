@@ -34,7 +34,6 @@ import SwiftUI
  *      Days after maxDate are not selectable.
  */
 @available(iOS 14.0, *)
-@available(macOS 11.0, *)
 struct MultiDatePicker: View {
     
     // the type of picker, based on which init() function is used.
@@ -89,9 +88,7 @@ struct MultiDatePicker: View {
     }
 }
 
-@available(macOS 11.0, *)
 @available(iOS 14.0, *)
-
 struct MultiDatePicker_Previews: PreviewProvider {
     @State static var oneDay = Date()
     @State static var manyDates = [Date]()

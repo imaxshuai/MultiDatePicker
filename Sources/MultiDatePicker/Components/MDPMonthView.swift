@@ -11,6 +11,7 @@ import SwiftUI
  * MDPMonthView is really the crux of the control. This displays everything and handles the interactions
  * and selections. MulitDatePicker is the public interface that sets up the model and this view.
  */
+@available(iOS 14.0, *)
 struct MDPMonthView: View {
     @EnvironmentObject var monthDataModel: MDPModel
         
@@ -69,6 +70,7 @@ struct MDPMonthView: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct MonthView_Previews: PreviewProvider {
     static var previews: some View {
         MDPMonthView()

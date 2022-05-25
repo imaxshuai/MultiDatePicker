@@ -11,6 +11,7 @@ import SwiftUI
  * MDPDayView displays the day of month on a MDPContentView. This a button whose color and
  * selectability is determined from the MDPDayOfMonth in the MDPModel.
  */
+@available(iOS 14.0, *)
 struct MDPDayView: View {
     @EnvironmentObject var monthDataModel: MDPModel
     let cellSize: CGFloat = 30
@@ -58,6 +59,7 @@ struct MDPDayView: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct DayOfMonthView_Previews: PreviewProvider {
     static var previews: some View {
         MDPDayView(dayOfMonth: MDPDayOfMonth(index: 0, day: 1, date: Date(), isSelectable: true, isToday: false))

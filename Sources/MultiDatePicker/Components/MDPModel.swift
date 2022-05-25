@@ -21,6 +21,7 @@ import Combine
  * The MDPModel should not be used outside of the MultiDatePicker, which initalizes this model
  * according to the type of selection required.
  */
+@available(iOS 14.0, *)
 class MDPModel: NSObject, ObservableObject {
     
     // the controlDate determines which month/year is being modeled. whenever it changes it
@@ -219,6 +220,7 @@ class MDPModel: NSObject, ObservableObject {
 
 // MARK: - BUILD DAYS
 
+@available(iOS 14.0, *)
 extension MDPModel {
     
     private func buildDays() {
@@ -278,6 +280,7 @@ extension MDPModel {
 
 // MARK: - UTILITIES
 
+@available(iOS 14.0, *)
 extension MDPModel {
     
     private func setSelection(_ date: Date) {

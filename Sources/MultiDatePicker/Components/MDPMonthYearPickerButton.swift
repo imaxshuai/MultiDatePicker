@@ -15,6 +15,7 @@ import SwiftUI
  * This is a quick way for the user to jump the year or month without having to the < or >
  * buttons.
  */
+@available(iOS 14.0, *)
 struct MDPMonthYearPickerButton: View {
     @EnvironmentObject var monthDataModel: MDPModel
     
@@ -34,6 +35,7 @@ struct MDPMonthYearPickerButton: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct MonthYearPickerButton_Previews: PreviewProvider {
     static var previews: some View {
         MDPMonthYearPickerButton(isPresented: .constant(false))

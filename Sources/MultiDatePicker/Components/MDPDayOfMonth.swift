@@ -12,6 +12,8 @@ import Foundation
  * represents one of 42 (7 days in a week, 6 possible weeks in a month) possible days. By
  * having the model build this struct at the outset, it reduces computations during runtime.
  */
+
+@available(iOS 14.0, *)
 struct MDPDayOfMonth {
     
     // used to keep track of this DayOfMonth's position in its collection
